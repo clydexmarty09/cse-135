@@ -1,0 +1,187 @@
+/* media query: desktop 
+
+/* LARGE screens -----------------------------------------*/
+@media screen and (min-width:900px) {
+   
+   
+    header {
+       margin: 1rem 1rem; 
+       padding: 1rem 1rem; 
+    }
+    h1 {
+       margin: 1rem; 
+       padding:0;
+       font-size:8rem; 
+       
+    }
+    
+    
+
+    nav figure {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       margin:0; 
+       text-align: center;
+     }
+   
+    
+    figcaption {
+       font-size:1rem; 
+    }
+    details[open] p{
+       font-size: 1.2rem;
+       align-items: left; 
+    }
+
+    aside {
+      font-size:0.8rem; 
+    }
+ 
+    .fighter-img {
+      width: 9rem;
+      height:9rem; 
+     
+   }
+    .main_nav {
+       display: var(--main-display);
+       flex-direction: row;
+       align-items: center;
+       padding-top: 1rem;
+    }
+ 
+    .main_nav a {
+       gap: 2rem; 
+      
+    }
+    .main_nav a img {
+       height: 2.3rem;
+       width:2.3rem; 
+       outline: none;
+       
+    }
+    .main_nav a img:hover {
+       transform: translateY(-3px);
+       transform: scale(1.2);
+       transition: transform 0.2s ease ;
+ 
+       /* wider-gamut color experiment*/
+       box-shadow:0 0 10px color(display-p3 0 1 1 1)
+       
+    }
+    .main_nav a img.switch-char {
+       width: 4.5rem;
+       height: 2.5rem;
+       outline: none; 
+       border: none;
+    }
+ 
+    .char_nav {
+       display: var(--main-display);
+       flex-direction: row;
+       align-items: center;
+       text-align: justify;
+       gap:2rem; 
+    }
+    /* Styles for cs.html below */
+    h2 {
+       text-shadow:  2px 2px 0 black; 
+       font-size: 1.5rem;
+    }
+    /* Change below to .resume {} */
+    .subpage_details {
+       padding-top:1.5rem; 
+       font-size: 1rem;
+       display: var(--main-display);
+       flex-direction: column;
+       text-align: left;
+       padding:1rem; 
+       width:100%; 
+       border-radius: 1.5rem;
+     
+    }
+ 
+    .subpage_details ul{
+       
+       align-items: left;
+       list-style-position: outside;
+       
+    }
+    .subpage_details[open] ul {
+       
+       text-align: left; 
+       margin:0;  
+       padding-left:4rem; 
+       text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9);
+       font-size:1rem; 
+    }
+ 
+    .subpage_details[open] summary {
+       opacity: 50%;
+     
+    }
+ 
+   details summary {
+      font-size: 1.2rem;
+   } 
+    .subpage_nav{
+       padding-bottom: 1.5rem;
+    }
+    .static_fighter {
+       width: 9rem;
+       height:9rem; 
+       max-width:150px ;
+       max-height: 150px; 
+       object-fit: cover;
+       outline: solid white; 
+       outline-offset: 4px;
+    }
+ 
+    footer {
+       color:var(--text-color); 
+       margin-top: 2rem;
+       margin-bottom: 4rem;
+       display: var(--main-display);
+       flex-direction: column;
+       align-items: flex-start;
+       text-align: left;
+    }
+ 
+ 
+    /* form.html edits*/
+    
+    .form {
+       
+       width: 35vw;
+       
+    } 
+    
+    .form-button {
+    
+       font-size: 1.2rem; 
+    } 
+
+    .input-err {
+       border: 2px solid red;
+      
+    }
+    
+    #error-msg, #info-msg {
+      
+       font-size: 1.2rem;
+    }
+ 
+    /*Code below is for theme button*/
+    .theme-switch {
+      margin-top: 1rem;
+      gap: 6rem; 
+       
+    }
+    
+    .theme-switch-button img {
+       width: 2rem;
+       height:2rem;
+       
+    }
+ }

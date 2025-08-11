@@ -1,0 +1,76 @@
+/*media query: iPad screens */ 
+/* -------------------------------------*/ 
+/* Media Queries */
+/* IPADS*/
+@media screen and (min-width:600px){
+   
+    h1{
+       font-size:7rem; 
+       padding:1rem; 
+    }
+   
+    figcaption {
+       font-size:1rem; 
+    }
+ 
+    nav {
+      gap: 1rem; 
+      
+    }
+
+    .fighter-img {
+      width: 8rem;
+      height:8rem; 
+   }
+ 
+    .main_nav {
+       display: var(--main-display);
+       flex-direction: row;
+       gap: 4rem;
+    }
+ 
+    .form-head {
+       font-family: var(--family-font);
+       font-size: 4rem;
+    }
+    .form {
+      
+       margin:2rem 2rem; 
+       padding: 1rem 1rem; 
+       display: var(--main-display);
+       flex-direction: var(--display-direction);
+       gap:1rem; 
+       width: 70vw;
+       align-items: stretch;
+       
+    }
+    
+    
+    .form-button {
+       height:4vh; 
+    } 
+
+    label {
+      
+       font-size: 1.1rem;
+      
+    }
+   
+    .input-err {
+       border: 2px solid red;
+      
+    }
+    
+    #error-msg, #info-msg {
+      
+       font-size: 1rem;
+    }
+ 
+    /*Code below is for theme button*/
+    .theme-switch {
+        gap: 6em;
+        margin:1rem; 
+    }
+   
+ }
+ 

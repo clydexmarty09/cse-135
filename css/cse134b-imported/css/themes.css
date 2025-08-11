@@ -1,0 +1,10 @@
+/* themes.css */
+.dark-theme {
+    background-image: url(../../../assets/themes/blurred_night_mode.webp);
+    color:var(--secondary-color);
+    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.dark-theme hgroup h1 {
+    font-family: Bradley Hand, cursive ;
+}

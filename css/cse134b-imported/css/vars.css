@@ -1,0 +1,21 @@
+/* vars.css */ 
+
+:root {
+    --family-font: "Share Tech Mono", monospace; 
+    --signature-font:"Brush Script MT", cursive; 
+    --layout:flex; 
+    --main-display:flex; 
+    --display-direction:column; 
+    --main-height:100dvh;
+    --text-color:white;
+    --secondary-color: rgb(244, 244, 158); 
+    --main-margin:0; 
+    --main-padding:0; 
+    --box-size: border-box; 
+    --height: 100%;
+    --width:100%;  
+    --font-size: 16px; 
+    --text-align:center; 
+    --color-shadow: 0px 2px 6px darkmagenta;
+ }
+ 

@@ -1,0 +1,94 @@
+/*  index.html styling */
+ :root {
+    --background-color: black;
+    --display:flex; 
+    --flex-direction:column; 
+    --margin:0.5rem; 
+    --padding:1rem; 
+    --font-color: #00ff00; 
+    --font-family: 'Share Tech Mono', monospace;  
+ }
+
+ * {
+
+    background-color: var(--background-color);
+    display: var(--display);
+    flex-direction: var(--flex-direction);
+    font-weight: var(--font-family);
+    font-family: var(--font-family);
+    color: var(--font-color);
+    align-items: left;
+ }
+
+.site-link {
+   
+    text-decoration: none;
+    padding: 1rem 0 1rem 0; 
+    color:cyan;
+    text-shadow: 0 0 5px #00ff00;
+    font-size: 1.5rem;
+    
+}
+
+.site-link:hover {
+    text-decoration: underline;
+    transform: scale(1.2); 
+    transform: translateY(-6px);
+}
+
+.site-link:focus {
+    text-decoration: underline;
+    transform: scale(1.2); 
+    transform: translateY(-6px);
+}
+
+  
+ title {
+    visibility: hidden; 
+ }
+
+ html, body {
+    margin-left: 1rem; 
+   
+ }
+
+ hr {
+    color: whitesmoke; 
+    width: 70vw; 
+    margin-left :-1rem;
+    margin-bottom:3rem; 
+    opacity: 50%;
+    background-color: #00ff00;
+    
+ }
+
+  details summary::before {
+    content: "▶";
+    color: white;
+    margin-right: 0.5rem;
+  }
+  
+  details[open] summary::before {
+    content: "▼";
+  }
+
+  details[open] summary {
+    opacity: 50%;
+  }
+ 
+ .as-list {
+    padding-bottom: 2rem; 
+ }
+ .as-list:hover {
+    transform: translateY(-5px);
+ }
+
+ .as-list:focus {
+    transform: translateY(-5px);
+ }
+
+ ul li {
+    line-height: 2;             
+ }
+
+ 

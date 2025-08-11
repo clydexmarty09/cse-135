@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang ="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/cse134b-imported/css/style.css" media="screen">
+    <link href="../../css/cse134b-imported/css/ipad-viewport.css" rel="stylesheet" media="screen">
+    <link href="../../css/cse134b-imported/css/desktop-viewport.css" rel="stylesheet" media="screen">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <title> Contact Me! </title>
+</head>
+
+<body>
+
+    <header>
+             <!-- top navigation -->
+        <nav class="main_nav">
+        <a href="clyde.html"> 
+            <img src="../../assets/navigation/home_compressed.webp" alt="Homepage" title="Homepage">
+        </a>
+        <div> 
+            <button type="button" class="theme-switch-button" id="theme"> 
+                <img src="../../assets/navigation/dark-theme-toggle.webp" alt="night-mode" id="theme-image">    
+            </button>  
+        </div>
+        </nav>
+
+        <h1 class="form-head"> CONTACT ME &phone; </h1>
+
+        
+    </header>
+
+    <form method="POST" action="https://httpbin.org/post" class = "form"> 
+
+        <label for="name-input" id="name-label"> NAME: </label>
+        <input type="text" name="name" id="name-input" required>
+
+        <label for="email-input" id="email-label"> EMAIL: </label>
+        <input type="text" name="email" id="email-input" required>
+
+        <label for ="msg-input" id="message"> MESSAGE:</label>
+        <textarea name ="msg" rows="6" cols="40" required id="msg-input" minlength="1" maxlength="200">  </textarea>
+
+        <input type="hidden" name="possible_bot" value="true">
+
+        <button type ="submit" class="form-button"> SEND </button>      
+        
+        <!-- adding <output> tags -->
+        <output id="error-msg"> </output>
+        <output id="info-msg">  </output>
+       
+    </form> 
+    <hr> 
+    <footer>
+        <aside>
+            <blockquote> 
+                Website <b>v1.13</b>: <ins> Added JS stuff</ins>
+            </blockquote>
+        </aside>
+    </footer>
+    
+    <script src="../../js/form-valid.js"></script>
+    <script src="../../js/theme-switch.js"></script>
+
+</body>
+</html>
