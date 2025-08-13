@@ -30,3 +30,9 @@ link: https://cse-135.site
 - However, I removed nginx afterward because it caused me other problems in other parts of the assignment 
 
 -------- EXTRA CREDIT ------------------------
+1) Matamo - utilized this website: https://www.digitalocean.com/community/tutorials/how-to-install-matomo-web-analytics-on-ubuntu-20-04
+
+- installed docker 
+- followed instructions on website to run matomo with docker compose 
+- install and set up nginx
+NOTE: Attempted but got stuck :( I could not get the matomo site to show 
