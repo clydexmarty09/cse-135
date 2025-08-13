@@ -30,6 +30,12 @@
     
 }
 
+.as-link {
+   text-decoration: none;
+    padding: 1rem 0 1rem 0; 
+    color:cyan;
+    text-shadow: 0 0 5px #00ff00; 
+}
 .site-link:hover {
     text-decoration: underline;
     transform: scale(1.2); 
