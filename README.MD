@@ -17,6 +17,13 @@ link: https://cse-135.site
 - then, I later I created an empty repo at /var/repo/cse135.git 
 - added a post-receive hook at /var/repo/cse135.git/hooks/post-receive
 
+
+—----- LOG IN CREDENTIALS —--------------
+
+username: grader
+password: xylophoneDestroyer07
+
+
 --------- COMPRESSION -----------------------
 
 - I noticed than less data was delivered, but the page loaded slightly slower. 
