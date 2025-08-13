@@ -24,9 +24,9 @@ link: https://cse-135.site
 --------- REMOVING SERVER HEADER -------------
 
 - Apache seemed to have been stubborn and I was having trouble swapping the header. 
-- This led me to reading up on nginx, installing it, and moving port 80 and 443 to a seprate 8080 port.
+- This led me to reading up on nginx, installing it, and moving Apache to port 8080, and had nginx keeo 80/443
 - This allowed me to configure the server header via nginx config file. 
 - Nginx trivially sets and clears headers after Apache responds 
-- However, I removed apache afterward because it caused me other problems in other parts of the assignment 
+- However, I removed nginx afterward because it caused me other problems in other parts of the assignment 
 
 -------- EXTRA CREDIT ------------------------
