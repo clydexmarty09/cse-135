@@ -30,9 +30,8 @@
     
 }
 
-.as-link {
-   text-decoration: none;
-    padding: 1rem 0 1rem 0; 
+details[open] a.as-link {
+   text-decoration: none; 
     color:cyan;
     text-shadow: 0 0 5px #00ff00; 
 }
