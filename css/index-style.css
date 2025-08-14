@@ -39,11 +39,13 @@ details[open] a.as-link {
 .site-link:hover, details[open] a.as-link:hover {
     text-decoration: underline;
     transform: translateY(-5px);
+    transition: 0.2s ease; 
 }
 
 .site-link:focus {
     text-decoration: underline;
     transform: translateY(-5px);
+    transition: 0.2s ease; 
     
 }
   
@@ -85,10 +87,12 @@ details[open] a.as-link {
  }
  .as-list:hover {
     transform: translateY(-5px);
+    transition: 0.2s ease; 
  }
 
  .as-list:focus {
     transform: translateY(-5px);
+    transition: 0.2s ease; 
  }
 
  ul li {
