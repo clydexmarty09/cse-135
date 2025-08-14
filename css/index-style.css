@@ -12,13 +12,18 @@
  * {
 
     background-color: var(--background-color);
+    color: var(--font-color);
+    align-items: left;
+ }
+
+ html, body {
     display: var(--display);
     flex-direction: var(--flex-direction);
     font-weight: var(--font-family);
     font-family: var(--font-family);
-    color: var(--font-color);
-    align-items: left;
+    
  }
+ 
 
 .site-link {
    
@@ -27,6 +32,8 @@
     color:cyan;
     text-shadow: 0 0 5px #00ff00;
     font-size: 1.5rem;
+    display: inline-block;
+   
     
 }
 
@@ -60,23 +67,13 @@ details[open] a.as-link {
 
  hr {
     color: whitesmoke; 
-    width: 70vw; 
+    width: 90vw; 
     margin-left :-1rem;
     margin-bottom:3rem; 
     opacity: 50%;
     background-color: #00ff00;
     
  }
-
-  details summary::before {
-    content: "▶";
-    color: white;
-    margin-right: 0.5rem;
-  }
-  
-  details[open] summary::before {
-    content: "▼";
-  }
 
   details[open] summary {
     opacity: 50%;
@@ -85,9 +82,10 @@ details[open] a.as-link {
  .as-list {
     padding-bottom: 2rem; 
  }
- .as-list:hover {
-    transform: translateY(-5px);
-    transition: 0.2s ease; 
+
+ .as-list:not([open]):hover {
+   transform: translateY(-5px);
+   transition: 0.2s ease;  
  }
 
  .as-list:focus {
@@ -95,6 +93,11 @@ details[open] a.as-link {
     transition: 0.2s ease; 
  }
 
+ul {
+   display: grid;
+   grid-template-columns: repeat(2, auto);
+   gap: 0.5rem; 
+}
  ul li {
     line-height: 2;             
  }
