@@ -33,7 +33,8 @@
 details[open] a.as-link {
    text-decoration: none; 
     color:cyan;
-    text-shadow: 0 0 5px #00ff00; 
+    text-shadow: 0 0 5px #00ff00;
+    display:inline-block !important;  
 }
 .site-link:hover, details[open] a.as-link:hover {
     text-decoration: underline;
