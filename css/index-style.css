@@ -38,13 +38,13 @@ details[open] a.as-link {
 }
 .site-link:hover, details[open] a.as-link:hover {
     text-decoration: underline;
-    transform: translateY(-6px) scale(1.2);
+    transform: scale(1.2);
 }
 
 .site-link:focus {
     text-decoration: underline;
     transform: scale(1.2); 
-    transform: translateY(-6px);
+    
 }
   
  title {
