@@ -35,9 +35,9 @@ details[open] a.as-link {
     color:cyan;
     text-shadow: 0 0 5px #00ff00; 
 }
-.site-link:hover {
+.site-link:hover, details[open] a.as-link:hover {
     text-decoration: underline;
-    transform: scale(1.2); 
+    -transform: scale(1.2); 
     transform: translateY(-6px);
 }
 
@@ -46,7 +46,6 @@ details[open] a.as-link {
     transform: scale(1.2); 
     transform: translateY(-6px);
 }
-
   
  title {
     visibility: hidden; 
