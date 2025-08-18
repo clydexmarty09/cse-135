@@ -9,9 +9,10 @@ console.log("<hr />\n")
 const length = Number(process.env.CONTENT_LENGTH || 0); 
 if(length == 0) {
     console.log("<p> NO POST DATA FOUND </p>")
+    console.log("</body></html>")
 } else {
     let data = ""; 
-    process.stdin.on('data', data=> { data += chunk;}); 
+    process.stdin.on('data', chunk=> { data += chunk;}); 
     process.stdin.on('end', ()=> {
 
         console.log("<p> POST body " + data + " </p>")
@@ -19,7 +20,7 @@ if(length == 0) {
         //split into [k, v] pairs
         const params = new URLSearchParams(data); 
         for (const[k, v] of params) {
-            console.log(`${key} = ${value}<br>`); 
+            console.log(`${k} = ${v}<br>`); 
         }
 
         console.log("</body></html>")
