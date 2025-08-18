@@ -1,4 +1,4 @@
-#!/usr/bin/nodejs
+#!/usr/bin/node
 console.log("Cache-Control: no-cache"); 
 console.log("Content-Type: text/html");
 console.log(""); 
