@@ -12,8 +12,11 @@ const server = createServer((req, res)=> {
     res.statusCode = 200; 
     res.setHeader('Content-Type','text/plain'); 
    
+    //grab user's id 
+    const ip= req.headers['x-forwarded-for'] || req.socket.remoteAddress;
    
     res.write('Hello World\n');  
+    res.write(`Your IP is ${ip}\n`); 
     res.end('printed at ' + now.toISOString()); 
 
     
