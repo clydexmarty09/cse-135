@@ -6,7 +6,7 @@ console.log("");
 console.log("<html><head><title>Environment Variables</title></head>");
 console.log("<body><h1 align=center>Environment Variables</h1><hr/>");
 
-for (const [key, valuye] of Object.entries(process.env)) {
+for (const [key, value] of Object.entries(process.env)) {
   console.log(`${key}=${value}</br>`); 
 }
 
