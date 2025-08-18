@@ -8,7 +8,7 @@ console.log("<html><body>");
 console.log("<h1 align=center>GET Request Echo</h1>\n")
 console.log("<hr />\n")
 
-const queryString = process.env.QUERY_STRING || "";  // read the query string 
+const qs = process.env.QUERY_STRING || "";  // read the query string 
 
 console.log("<p> Raw Query String: " + qs + " </p>"); 
 
