@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#!/usr/bin/nodejs
 const now = new Date().toISOString; 
 const ip = process.env.REMOTE_ADDR || "unknown"; 
 console.log("Cache-Control: no-cache"); 
