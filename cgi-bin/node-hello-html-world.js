@@ -1,4 +1,4 @@
-
+#!/usr/bin/node
 /*
 const now = new Date().toISOString(); 
 
