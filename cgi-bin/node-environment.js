@@ -1,27 +1,12 @@
-const { createServer } = require('node:http'); 
-const hostname = '127.0.0.1'; 
-const port = 3002;
+#!/usr/bin/env node
+console.log("Cache-Control: no-cache"); 
+console.log("Content-Type: text/html");
 
-const server = createServer((req, res)=> {
+console.log("<html><head><title>Environment Variables</title></head>");
+console.log("<body><h1 align=center>Environment Variables</h1><hr/>");
 
-  res.setHeader('Content-Type', 'text/plain'); 
+for (const [key, valuye] of Object.entries(process.env)) {
+  console.log(`${key}=${value}<\br>`); 
+}
 
-  const method = req.method;  // GET 
-  const app = req.app; 
-  const url = req.url;  
-   
-  res.write('ENVIRONMENT VARIABLES\n\n'); 
-  res.write(`REQUEST_METHOD=${method}\n`); 
-  res.write(`${app}\n`); 
-  res.write(`URL=${url}\n`); 
-  res.end();   
-
-}); 
-
-
-server.listen(port, hostname, () => {
-
-    console.log(`Server running at http://${hostname}:${port}/`);
-   
-
-});
+console.log("<\body><\html>")
