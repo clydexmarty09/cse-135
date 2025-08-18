@@ -1,31 +1,11 @@
-const { createServer } = require('node:http'); 
-const hostname = '127.0.0.1'; 
-const port = 3000; 
- 
+#!/usr/bin/env node
+const now = new Date().toISOString; 
+const ip = process.env.REMOTE_ADDR || "unknown"; 
+console.log("Cache-Control: no-cache"); 
+console.log("Content-Type: text/html"); 
 
-const server = createServer((req, res)=> {
-
-
-    //const for date
-    const now = new Date();
-    console.log(req.headers);   
-    res.statusCode = 200; 
-    res.setHeader('Content-Type','text/plain'); 
-   
-    //grab user's id 
-    const ip= req.headers['x-forwarded-for'] || req.socket.remoteAddress;
-   
-    res.write('Hello World\n');  
-    res.write(`Your IP is ${ip}\n`); 
-    res.end('printed at ' + now.toISOString()); 
-
-    
-
-}); 
-
-server.listen(port, hostname, () => {
-
-    console.log(`Server running at http://${hostname}:${port}/`);
-   
-
-}); 
+console.log("<html><body>");
+console.log("<h1>Hello World from Node CGI!</h1>");
+console.log(`<p>Your IP is: ${ip}</p>`);
+console.log(`<p>Current time: ${now}</p>`);
+console.log("</body></html>");
