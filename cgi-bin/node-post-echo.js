@@ -7,7 +7,7 @@ console.log("<html><body><h1 align=center> POST Request Echo</h1>")
 console.log("<hr />\n")
 
 const length = Number(process.env.CONTENT_LENGTH || 0); 
-if(length == 0) {
+if(length === 0) {
     console.log("<p> NO POST DATA FOUND </p>")
     console.log("</body></html>")
 } else {
