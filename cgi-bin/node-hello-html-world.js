@@ -1,7 +1,11 @@
 #!/usr/bin/node
-const now = new Date().toISOString; 
+
+const now = new Date().toISOString(); 
+
+//REQUIRED HEADERS 
 console.log("Cache-Control: no-cache"); 
 console.log("Content-Type: text/html"); 
+console.log("");  
 
 const ip = process.env.REMOTE_ADDR || "unknown"; 
 
