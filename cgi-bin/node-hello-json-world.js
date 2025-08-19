@@ -17,6 +17,7 @@ console.log(JSON.stringify(payload)); */
 const http = require('node:http');
 
 http.createServer((req, res) => {
+  res.writeHead(200, {'Content-Type': 'text/html', 'Cache-Control': 'no-cache'});
   const now = new Date().toISOString();
   const ip = req.socket.remoteAddress;
   const payload= {
