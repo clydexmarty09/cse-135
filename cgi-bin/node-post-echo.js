@@ -1,4 +1,5 @@
 #!/usr/bin/node
+/*
 console.log("Cache-Control: no-cache"); 
 console.log("Content-Type: text/html");
 console.log(""); 
@@ -25,5 +26,23 @@ if(length === 0) {
 
         console.log("</body></html>")
     }); 
-}
+} */ 
+
+http.createServer((req, res) => {
+    let body = '';
+    req.on('data', chunk => body += chunk);
+    req.on('end', () => {
+      res.writeHead(200, {
+        'Cache-Control': 'no-cache',
+        'Content-Type': 'text/html'
+      });
+      res.end(
+  `<html><head><title>POST Message Body</title></head>
+  <body><h1 align="center">POST Message Body</h1>
+  <hr/>
+  Message Body: ${body || ''}<br/>
+  </body></html>`
+      );
+    });
+  }).listen(3004, '127.0.0.1');
 
