@@ -1,4 +1,5 @@
 #!/usr/bin/node
+/*
 console.log("Cache-Control: no-cache"); 
 console.log("Content-Type: text/html");
 console.log(""); 
@@ -34,7 +35,26 @@ if(clen === 0) {
          
     }); 
    
-}
+} */ 
+const http = require('node:http'); 
+http.createServer((req, res) => {
+   
+    let body = ''; 
+    req.on('data', chunk=> body += chunk); 
+    req.on('end', ()=>{
+        res.writeHead(200, {'Content-Type': 'text/html', 'Cache-Control': 'no-cache'}); 
+
+        res.end(
+            `<html><body><h1 align=center> General Request Echo </h1><hr>
+             <p> Protocol: HTTP/ ${req.httpVersion}</p>
+             <p> Method: ${req.method}</p>
+             <p> Message Body: ${body || ''} </p></bodyy></html> `
+
+        ); 
+    
+    }); 
+  }).listen(3005, '127.0.0.1');
+
 
 
 
